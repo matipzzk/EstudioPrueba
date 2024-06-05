@@ -1,8 +1,10 @@
 # Creamos un arreglo/Matriz 3x3x3
 
-arreglo = [["amarillo", "rojo", "Naranja"], ["Verde", "Blanco", "amarillo"], ["rojo", "Naranja", "Verde"]],
-[["Blanco", "amarillo", "rojo"], ["Naranja", "Verde", "Blanco"], ["amarillo", "rojo", "Naranja"]],
-[["Verde", "Blanco", "amarillo"], ["rojo", "Naranja", "Verde"], ["Blanco", "amarillo", "rojo"]]
+arreglo = [
+    [["amarillo", "rojo", "Naranja"], ["Verde", "Blanco", "amarillo"], ["rojo", "Naranja", "Verde"]],
+    [["Blanco", "amarillo", "rojo"], ["Naranja", "Verde", "Blanco"], ["amarillo", "rojo", "Naranja"]],
+    [["Verde", "Blanco", "amarillo"], ["rojo", "Naranja", "Verde"], ["Blanco", "amarillo", "rojo"]]
+]
 
 # Iniciamos Los contadores 
 
@@ -31,3 +33,10 @@ for i in range(3):
                 contado_verde += 1
             elif arreglo[i][j][k] == "Blanco":
                 contado_blanco += 1
+                
+# Muestro Los Resultados de cada color
+print(f"Número de veces que repite el color 'Amarillo': {contado_amarillo}")
+print(f"Número de veces que repite el color 'Rojo': {contado_rojo}")
+print(f"Número de veces que repite el color 'Naranja': {contado_naranja}")
+print(f"Número de veces que repite el color 'Verde': {contado_verde}")
+print(f"Número de veces que repite el color 'Blanco': {contado_blanco}")
