@@ -20,18 +20,18 @@ contado_blanco = 0
 
 
 
-for i in range(3):
-    for j in range(3):
+for x in range(3):
+    for y in range(3):
         for k in range(3):
-            if arreglo[i][j][k] == "amarillo":
+            if arreglo[x][y][k] == "amarillo":
                 contado_amarillo += 1
-            elif arreglo[i][j][k] == "rojo":
+            elif arreglo[x][y][k] == "rojo":
                 contado_rojo += 1
-            elif arreglo[i][j][k] == "Naranja":
+            elif arreglo[x][y][k] == "Naranja":
                 contado_naranja += 1
-            elif arreglo[i][j][k] == "Verde":
+            elif arreglo[x][y][k] == "Verde":
                 contado_verde += 1
-            elif arreglo[i][j][k] == "Blanco":
+            elif arreglo[x][y][k] == "Blanco":
                 contado_blanco += 1
                 
 # Muestro Los Resultados de cada color
